@@ -31,5 +31,6 @@ return {
   'vague2k/vague.nvim',
   'lunacookies/vim-colors-xcode',
   'rebelot/kanagawa.nvim',
+  'olimorris/onedarkpro.nvim',
   'embark-theme/vim',
 }
