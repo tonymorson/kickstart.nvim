@@ -1,7 +1,7 @@
 require('vim_options')
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 

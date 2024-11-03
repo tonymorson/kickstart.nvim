@@ -1,6 +1,7 @@
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+vim.keymap.set('n', 'xsf', ':! swiftformat .<CR>', { desc = 'Run [S]wift [F]ormat'})
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -39,3 +40,5 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+vim.keymap.set('n', '<leader>ff', ':! swiftformat .<CR>', { desc = '[F]ormat [F]iles'})
+vim.keymap.set('n', '<leader>gs', ':! git status<CR>', { desc = '[G]it [S]tatus'})
