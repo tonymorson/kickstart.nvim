@@ -1,7 +1,6 @@
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.keymap.set('n', 'xsf', ':! swiftformat .<CR>', { desc = 'Run [S]wift [F]ormat'})
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -9,7 +8,8 @@ vim.g.maplocalleader = ' '
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('i', 'kj', '<Esc>')
-vim.keymap.set('n', 'ff', '/func<CR>')
+vim.keymap.set('n', '[f', '/func<CR>zz')
+vim.keymap.set('n', ']f', '?func<CR>zz')
 
 -- FIX: Place the following line in your oil config file when finished configuration...
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
@@ -42,3 +42,5 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set('n', '<leader>ff', ':! swiftformat .<CR>', { desc = '[F]ormat [F]iles'})
 vim.keymap.set('n', '<leader>gs', ':! git status<CR>', { desc = '[G]it [S]tatus'})
+
+vim.keymap.set('n', 'xsf', ':! swiftformat .<CR>', { desc = 'Run [S]wift [F]ormat'})
