@@ -1,5 +1,4 @@
 return { -- for running Xcode projects from NVIM
-
     'wojciech-kulik/xcodebuild.nvim',
     dependencies = {
       'nvim-telescope/telescope.nvim',

@@ -9,5 +9,6 @@ return {
     "ibhagwan/fzf-lua",              -- optional
     "echasnovski/mini.pick",         -- optional
   },
-  config = true
+  config = true,
+  vim.keymap.set('n', '<leader>gs', ':Neogit<CR>', { desc = '[G]it [S]tatus' })
 }
