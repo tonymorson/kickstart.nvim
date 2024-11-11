@@ -10,5 +10,5 @@ return {
     "echasnovski/mini.pick",         -- optional
   },
   config = true,
-  vim.keymap.set('n', '<leader>gs', ':Neogit<CR>', { desc = '[G]it [S]tatus' })
+  vim.keymap.set('n', '<leader>gs', ':!swiftformat .<CR><CR>:Neogit<CR>', { desc = '[G]it [S]tatus' })
 }
