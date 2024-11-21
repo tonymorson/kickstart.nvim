@@ -43,4 +43,4 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', '<leader>ff', ':wa<CR>:! swiftformat .<CR>', { desc = '[F]ormat [F]iles'})
 vim.keymap.set('n', '<leader>gt', ':! git status<CR>', { desc = '[G]it on the [T]erminal'})
 
-vim.keymap.set('n', 'xsf', ':! swiftformat .<CR>', { desc = 'Run [S]wift [F]ormat'})
+vim.keymap.set('n', '==', ':wa<CR>:! swiftformat .<CR><CR>', { desc = 'Run [S]wift [F]ormat'})
